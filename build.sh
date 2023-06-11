@@ -1,2 +1,5 @@
 gradle build
-cp -f build/libs/CandyTravel-*.jar debug/plugins/CandyTravel-*.jar
+
+mkdir -p debug/plugins
+rm debug/plugins/CandyTravel-*.jar
+cp -f build/libs/CandyTravel-*.jar debug/plugins/
