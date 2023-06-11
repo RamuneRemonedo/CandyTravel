@@ -1,0 +1,8 @@
+name: CandyTravel
+version: '${version}'
+main: net.ramuremo.candytravel.CandyTravel
+api-version: 1.19
+folia-supported: true
+prefix: CandyTravel <3
+authors: [RamuneRemonedo]
+description: CandyTravel is the best game ever
