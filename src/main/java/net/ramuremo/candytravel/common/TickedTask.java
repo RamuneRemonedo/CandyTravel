@@ -52,9 +52,9 @@ public class TickedTask<V> {
 
         for (Map.Entry<Long, V> entry : tasks) {
 
-            if (future.isCancelled()) break;
-
             sleep(entry.getKey());
+
+            if (future.isCancelled()) break;
 
             whenTickedConsumer.accept(entry);
         }

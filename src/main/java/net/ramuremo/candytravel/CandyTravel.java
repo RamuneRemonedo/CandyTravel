@@ -17,9 +17,7 @@ public final class CandyTravel extends JavaPlugin implements Listener {
     @EventHandler
     public void onShift(PlayerToggleSneakEvent event) {
         if (event.isSneaking()) {
-            System.out.println("再生");
-            soundTask = new CollectCandySound().play(Bukkit.getPlayer("ramuremo_chan"));
-            soundTask.whenComplete((unused, throwable) -> System.out.println("終了"));
+            soundTask = new FanfareSound().play(Bukkit.getPlayer("ramuremo_chan"));
         } else {
             soundTask.cancel(true);
         }
